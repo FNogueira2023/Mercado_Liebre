@@ -42,8 +42,8 @@
             </div>
             <div class="nav-right">
                 <ul>
-                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li><a href="login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                     <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
             </div>
@@ -61,68 +61,84 @@
 
     <main>
 
-        <form action="home.html" method="post">
+        <form class="register-form" action="home.html" method="post">
+            <ul>
 
-            <!-- NOMBRE -->
-            <label for="nombre">Nombre y apellido:</label>
-            <input type="text" name="nombre" id="nombre">
-
-            <!-- USUARIO -->
-            <label for="usuario">Nombre de usuario:</label>
-            <input type="text" name="usuario" id="usuario">
-
-            <!-- NACIMIENTO -->
-            <label for="fecha-nacimiento">Fecha de nacimiento:</label>
-            <input type="date" name="fecha-nacimiento" id="fecha-nacimiento">
-
-            <!-- DOMICILIO -->
-            <label for="domicilio">Domicilio:</label>
-            <input type="text" name="domicilio" id="domiciolio">
-
-            <!-- PERFIL -->
-            <label>Perfil de usuario</label>
-
-            <input type="radio" value="comprador" name="perfil" id="comprador">
-            <label for="comprador">Comprador</label>
-
-            <input type="radio" value="vendedor" name="perfil" id="vendedor">
-            <label for="vendedor">Vendedor</label>
-
-            <!-- INTERESES -->
-            <label for="intereses">Categorías de interés (puede elegir más de una)</label>
-
-            <input type="checkbox" value="Electro" name="Electro" id="Electro">
-            <label for="Electro">Electro</label>
-
-            <input type="checkbox" value="Moda" name="Moda" id="Moda">
-            <label for="Moda">Moda</label>
-
-            <input type="checkbox" value="Hogar" name="Hogar" id="Hogar">
-            <label for="Hogar">Hogar</label>
-
-            <input type="checkbox" value="Juguetería" name="Juguetería" id="Juguetería">
-            <label for="Juguetería">Juguetería</label>
-
-            <input type="checkbox" value="Vida sana" name="Vida sana" id="Vida sana">
-            <label for="Vida sana">Vida sana</label>
-
-            <!-- FOTO -->
-            <label for="foto">Foto de Usuario:</label>
-            <input type="image" value="foto" id="foto">
-
-            <!-- PASSWORD -->
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" name="contraseña" id="contraseña">
-
-            <label for="contraseña2">Confirmar contraseña</label>
-            <input type="password" name="contraseña2" id="contraseña2">
+                <!-- NOMBRE -->
+                <li><input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" required></li>
 
 
-            <a href="home">
-                <button type="submit">Registrarse</button>
-            </a>
 
-            <button type="reset">Borrar datos</button>
+                <!-- USUARIO -->
+                <li><input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required></li>
+
+
+                <!-- EMAIL -->
+                <li><input type="email" name="email" id="email" placeholder="E-mail" required></li>
+
+
+                <!-- DOMICILIO -->
+                <li><input type="text" name="domicilio" id="domiciolio" placeholder="Domicilio" required></li>
+
+                <!-- NACIMIENTO -->
+                <li><label for="fecha-nacimiento"><h4>Fecha de nacimiento</h4></label></li>
+                <li> <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" required></li>
+
+                
+                <!-- PERFIL -->
+                <li><label><h4>Perfil de usuario</h4></label></li>
+
+                <li><input type="radio" value="comprador" name="perfil" id="comprador">
+                <label for="comprador">Comprador</label>
+
+                <input type="radio" value="vendedor" name="perfil" id="vendedor">
+                <label for="vendedor">Vendedor</label> </li>
+
+                <!-- INTERESES -->
+                <li><label for="intereses"><h4>Intereses</h4></label></li>
+
+                <li><input type="checkbox" value="Electro" name="Electro" id="Electro">
+                    <label for="Electro">Electro</label>
+                </li>
+
+                <li><input type="checkbox" value="Moda" name="Moda" id="Moda">
+                    <label for="Moda">Moda</label>
+                </li>
+
+                <li><input type="checkbox" value="Hogar" name="Hogar" id="Hogar">
+                    <label for="Hogar">Hogar</label>
+                </li>
+
+                <li> <input type="checkbox" value="Juguetería" name="Juguetería" id="Juguetería">
+                    <label for="Vida sana">Juguetería</label>
+                </li>
+
+                <li><input type="checkbox" value="Vida sana" name="Vida sana" id="Vida sana">
+                    <label for="Vida sana">Vida sana</label>
+                </li>
+
+                <!-- FOTO -->
+                <li><label for="foto">Foto de Usuario:</label></li>
+                <li><input type="file" value="foto" id="foto" required></li>
+
+                <!-- PASSWORD -->
+                <li><label for="contraseña">Contraseña:</label></li>
+                <li><input type="password" name="contraseña" id="contraseña" required></li>
+
+                <li><label for="contraseña2">Confirmar contraseña</label></li>
+                <li><input type="password" name="contraseña2" id="contraseña2" required></li>
+
+                <li><button type="submit">Registrarse</button></li>
+                
+                <li><button type="reset">Borrar datos</button></li>
+
+
+
+            </ul>
+
+
+
+
 
         </form>
 

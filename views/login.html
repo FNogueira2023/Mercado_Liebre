@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Registra tu cuenta</title>
+    <title>Ingresá con tu cuenta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css " rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/style-register.css">
+    <link rel="stylesheet" href="css/style-login.css">
 </head>
 
 <body>
@@ -42,8 +43,8 @@
             </div>
             <div class="nav-right">
                 <ul>
-                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li><a href="login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                     <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
             </div>
@@ -61,20 +62,18 @@
 
     <main>
 
-        <form action="/login" method="post">
-            <label for="usuario">Nombre de usuario</label>
-            <input type="text" name="usuario" id="usuario">
+        <form class="login-form" action="/login" method="post">
+            <ul>
+                <li><input type="text" name="usuario" id="usuario" placeholder="Nombre de Usuario"></li>
+    
+                <li><input type="password" name="contraseña" id="contraseña" placeholder="Contraseña"></li>
+    
+                
+                <li><button class="enviar-button" type="submit">Enviar</button></li>
+                
+            </ul>
+                     
 
-            <label for="contraseña">Contraseña</label>
-            <input type="password" name="contraseña" id="contraseña">
-
-            <a href="home">
-                <button type="submit">Registrarse</button>
-            </a>
-
-
-
-            <button type="submit">Enviar</button>
         </form>
 
         
