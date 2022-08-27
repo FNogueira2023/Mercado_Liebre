@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
 }
 
 body {
@@ -14,11 +15,11 @@ h3 {
 }
 
 p {
-    font-size: 12px;
+    font-size: 18px;
 }
 
 div.top-header {
-    padding: 5%;
+    padding: 1rem;
 }
 
 header {
@@ -28,6 +29,10 @@ header {
 header div.logo {
     width: 50%;
     padding: 10px;
+}
+
+header h2 {
+    align-self: center;
 }
 
 .search-bar {
@@ -44,12 +49,10 @@ header div.logo {
     background-size: 16px;
 }
 
-header nav {
-    font-size: 12px;
-}
 
 header ul li {
     list-style-type: none;
+    font-size: large;
 }
 
 header ul li a {
@@ -130,22 +133,8 @@ main section article {
     padding: 15px;
 }
 
-main section article i{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: #39b54a solid 1px;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;    
-}
-
 main section article img {
-    width: 100%;
+    width: 60%;
 }
 
 main section article i,
@@ -153,13 +142,13 @@ main section article i,
     color: #39b54a;
 }
 
-.main-article-numbers{
+.main-article-numbers {
     display: flex;
     justify-content: center;
-    margin: 5px;    
+    margin: 5px;
 }
 
-.price{
+.price {
     margin-right: 10px;
 }
 
@@ -171,12 +160,29 @@ nav,
 
 }
 
-footer div {
-    text-align: center;
-    margin-bottom: 2rem ;
+footer{
+    margin: 2rem;
+    background-color: #fff;      
+    border-top: 1px solid #ebebeb;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    padding: 10px;
 }
 
-footer img{
+footer div {
+    text-align: center;
+    margin-bottom: 2rem;
+    
+
+}
+
+footer p {
+    max-width: 350px;
+    text-align: center;
+    margin: auto;
+}
+
+
+footer img {
     width: 2rem;
 }
 
@@ -197,26 +203,111 @@ footer img{
         display: none;
     }
 
-    
+    .top-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header div.logo {
+        width: 30%;
+        padding: 10px;
+    }
+
+    .form {
+        align-self: center;
+    }
+
+    .search-bar {
+        width: 120%;
+        border-radius: 26px;
+        border: 1px solid #ada9a9;
+        padding: 1% 6%;
+        margin: 1% 1%;
+        align-items: center;
+    }
+
+    header h2 {
+        max-width: 350px;
+        text-align: right;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin: 0 8px;
+
+
+    }
+
+
+
+
 }
 
-@media (min-width: 700px) and (max-width:1023px) {
-    .products{
+@media (min-width: 700px) and (max-width:1199px) {
+    .form {
+        width: 100%;
+        margin: auto;
+        font-size: larger;
+    }
+
+    .products {
         display: flex;
         flex-wrap: wrap;
     }
 
-     article{
+    article {
         width: 40vw;
-    } 
+    }
 
-    /* AVERIGUAR PORQUE EL WIDTH NO SE MODIFICA!!!!! */
 
-    
+
+
 }
 
-@media(min-width: 1024px) {
-    .products{  
-        display: flex;
+@media(min-width: 1200px) {
+
+    .top-header,
+    nav {
+        max-width: 1500px;
+        margin: auto;
+
     }
+
+    .search-bar {
+        width: 100%;
+        margin: auto;
+        font-size: larger;
+
+    }
+
+    nav li {
+        margin: 0 12px;
+    }
+
+    nav a {
+        font-size: 22px;
+        font-weight: 400;
+
+    }
+
+    header h2 {
+        max-width: none;
+        margin: 0;
+    }
+
+
+
+    .products {
+        display: flex;
+        justify-content: space-between;
+    }
+
 }
