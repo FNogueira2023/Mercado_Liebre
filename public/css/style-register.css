@@ -1,20 +1,20 @@
 body{
-    background-color: white;
+    background-color: #ebebeb;
 }
 
-.banner{
+header{
     margin-bottom: 2rem;
 }
 
 
 
 .register-form {
+    background-color: white;
     margin: auto;
     width: 300px;
     padding: 1rem;
     border: 1px solid #ebebeb;
-    border-radius: 1em;
-    background-color: #ebebeb;
+    border-radius: 1em;    
     text-align: center;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     
