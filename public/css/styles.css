@@ -153,9 +153,9 @@ main section article i,
 }
 
 main section article i{
-    position: relative;
-    left:200px;
-    bottom: 10px;
+    position: absolute;
+    right:25px;
+    top: -10px;
 }
 
 
