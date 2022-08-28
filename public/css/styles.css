@@ -18,12 +18,11 @@ p {
     font-size: 18px;
 }
 
-div.top-header {
-    padding: 1rem;
-}
-
 header {
-    background-color: #EAC926;
+    background-color: #EAC926;  
+    position: fixed;  
+    width: 100%; 
+    top: 0;
 }
 
 header div.logo {
@@ -33,6 +32,7 @@ header div.logo {
 
 header h2 {
     align-self: center;
+    
 }
 
 .search-bar {
@@ -76,7 +76,7 @@ div.burger-menu i {
     color: #FFF;
     font-size: 20px;
     height: 40px;
-    margin: 10px 0px 20px 0px;
+    margin: 8px 0px 15px 0px;
     padding: 10px;
     width: 40px;
 }
@@ -102,6 +102,7 @@ h3,
 
 section.banner img {
     width: 100%;
+    margin-top: 200px;
 }
 
 main {
@@ -229,6 +230,11 @@ footer img {
         margin: 0 8px;
 
 
+    }
+
+    section.banner img {
+        width: 100%;
+        margin-top: 120px;
     }
 
 
