@@ -2,6 +2,10 @@
     background-color: #ebebeb;
     width: 100%;
  }
+
+ .container-login{
+    margin-top: 250px;
+  }
  
  footer{
     margin:0;
@@ -32,4 +36,9 @@
 
  .login-form button {
      width: 100%;
+     transition: 1s;
+ }
+
+ .login-form button:hover{
+    background-color: #0022AA ;
  }

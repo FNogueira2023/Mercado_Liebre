@@ -19,9 +19,10 @@ p {
 }
 
 header {
-    background-color: #EAC926;  
-    position: fixed;  
-    width: 100%; 
+    background-color: #EAC926;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
     top: 0;
 }
 
@@ -32,7 +33,7 @@ header div.logo {
 
 header h2 {
     align-self: center;
-    
+
 }
 
 .search-bar {
@@ -81,7 +82,13 @@ div.burger-menu i {
     width: 40px;
 }
 
-article div.main-article {
+nav,
+.description {
+    display: none;
+
+}
+
+.main-article {
     width: 100%;
 }
 
@@ -119,6 +126,19 @@ main section article {
     padding: 15px;
 }
 
+.description {
+    visibility: hidden;
+}
+
+article:hover .description {
+    visibility: visible;
+}
+
+article:hover i{
+    transform: rotatex(180deg);
+}
+
+
 main section article img {
     width: 60%;
 }
@@ -126,12 +146,17 @@ main section article img {
 main section article i,
 .discount {
     color: #39b54a;
+    transition: all 1s;
 }
+
+
 
 .main-article-numbers {
     display: flex;
     justify-content: center;
+    
     margin: 5px;
+
 }
 
 .price {
@@ -139,16 +164,9 @@ main section article i,
 }
 
 
-
-nav,
-.description {
-    display: none;
-
-}
-
-footer{    
+footer {
     margin-top: 2rem;
-    background-color: #fff;      
+    background-color: #fff;
     border-top: 1px solid #ebebeb;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     padding: 10px;
@@ -157,8 +175,6 @@ footer{
 footer div {
     text-align: center;
     margin-bottom: 2rem;
-    
-
 }
 
 footer p {
@@ -169,13 +185,17 @@ footer p {
 
 
 footer img {
-    width: 2rem;
+    width: 2rem;  
+    margin: 1rem;   
 }
 
 
 
+
+
 @media (min-width: 700px) {
-    main section article {
+
+    main section article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
@@ -240,6 +260,8 @@ footer img {
 
 
 
+
+
 }
 
 @media (min-width: 700px) and (max-width:1199px) {
@@ -257,11 +279,8 @@ footer img {
     article {
         width: 40vw;
     }
-
-
-
-
 }
+
 
 @media(min-width: 1200px) {
 
@@ -300,5 +319,21 @@ footer img {
         display: flex;
         justify-content: space-between;
     }
+
+
+    footer{
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+    }
+
+    footer .copyright{
+        position: absolute;
+        margin: 1rem;
+        bottom: 0;
+        left: 10px;
+    }
+
+
 
 }

@@ -6,6 +6,10 @@ header{
     margin-bottom: 2rem;
 }
 
+.container-register{
+  margin-top: 250px;
+}
+
 
 
 .register-form {
@@ -64,5 +68,7 @@ form li + li {
   }
       
 
+
+  
 
   
