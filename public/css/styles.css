@@ -88,9 +88,6 @@ nav,
 
 }
 
-.main-article {
-    width: 100%;
-}
 
 .price {
     font-size: 18px;
@@ -126,6 +123,12 @@ main section article {
     padding: 15px;
 }
 
+.main-article {
+    width: 100%;
+    border-top: #ebebeb solid 1px;
+    position: relative;
+}
+
 .description {
     visibility: hidden;
 }
@@ -149,18 +152,26 @@ main section article i,
     transition: all 1s;
 }
 
+main section article i{
+    position: relative;
+    left:200px;
+    bottom: 10px;
+}
 
 
 .main-article-numbers {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;    
     margin: 5px;
 
 }
 
 .price {
     margin-right: 10px;
+}
+
+.discount{
+    align-self: center;
 }
 
 
