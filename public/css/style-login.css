@@ -1,3 +1,5 @@
+ /* GENERAL */
+
  main{
     background-color: #ebebeb;
     width: 100%;
@@ -10,6 +12,8 @@
  footer{
     margin:0;
  }
+
+ /* FORM */
  
  .login-form {
      margin: auto;
@@ -34,6 +38,7 @@
      padding: 0.5rem;
  }
 
+ /* button */
  .login-form button {
      width: 100%;
      transition: 1s;
